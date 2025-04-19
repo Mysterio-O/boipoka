@@ -84,6 +84,7 @@ git commit -m "Add your feature"
 git push origin feature/your-feature-name
 
 ---
+```
 
 ## 📄 License
 
@@ -92,7 +93,7 @@ See the [LICENSE](LICENSE) file for full details.
 
 ---
 
-## 📬 Contact
+### 📬 Contact
 
 For questions, suggestions, or feedback, feel free to reach out:
 
