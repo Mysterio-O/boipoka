@@ -83,15 +83,22 @@ git checkout -b feature/your-feature-name
 git commit -m "Add your feature"
 git push origin feature/your-feature-name
 
-📄 License
-This project is licensed under the MIT License.
-See the LICENSE file for full details.
+---
 
-📬 Contact
-For questions, suggestions, or feedback:
+## 📄 License
 
-📧 Email: your-email@example.com
+This project is licensed under the **MIT License**.  
+See the [LICENSE](LICENSE) file for full details.
 
-🐙 GitHub Issues: Submit here
+---
 
-Happy reading with Book Vibe! 📖✨
+## 📬 Contact
+
+For questions, suggestions, or feedback, feel free to reach out:
+
+- 📧 **Email**: `your-email@example.com`
+- 🐙 **GitHub Issues**: [Submit here](https://github.com/your-username/book-vibe/issues)
+
+---
+
+**Happy reading with Book Vibe!** 📖✨
