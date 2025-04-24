@@ -97,8 +97,8 @@ See the [LICENSE](LICENSE) file for full details.
 
 For questions, suggestions, or feedback, feel free to reach out:
 
-- 📧 **Email**: `your-email@example.com`
-- 🐙 **GitHub Issues**: [Submit here](https://github.com/your-username/book-vibe/issues)
+- 📧 **Email**: `example.com`
+- 🐙 **GitHub Issues**: [Submit here](https://github.com/mysterio-O/book-vibe/issues)
 
 ---
 

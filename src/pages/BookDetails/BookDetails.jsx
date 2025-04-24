@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { addStoreDB, addWishList, getBookData } from '../../utilities/utility';
+import { Helmet } from 'react-helmet-async';
 
 const BookDetails = () => {
     const selectedBookId = useParams();
@@ -24,6 +25,9 @@ const BookDetails = () => {
     return (
         <div className="mb-10 md:flex gap-12 bg-gradient-to-br from-indigo-900/80 to-purple-900/80 rounded-2xl p-6 relative overflow-hidden animate-slide-in-right">
             {/* 📖 Animated Book Element */}
+            <Helmet>
+                <title>{bookName}</title>
+            </Helmet>
             <div className="absolute w-6 h-6 bg-[url('https://img.icons8.com/ios-filled/50/ffffff/book.png')] bg-cover opacity-30 animate-float-book top-4 right-10" />
 
             <div className="md:w-1/2 bg-indigo-800/20 rounded-2xl mx-4 md:mx-0 group relative">

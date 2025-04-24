@@ -1,10 +1,14 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router';
 
 const ErrorPage = () => {
     return (
         <div className="min-h-screen bg-gradient-to-b from-red-950 to-gray-900 flex items-center justify-center relative overflow-hidden">
             {/* 🚨 Floating Error-Related Animations */}
+            <Helmet>
+                <title>Page not found</title>
+            </Helmet>
             <div className="absolute w-8 h-8 bg-[url('https://img.icons8.com/ios-filled/50/ffffff/warning.png')] bg-cover opacity-30 animate-float-error top-10 left-10" />
             <div className="absolute w-8 h-8 bg-[url('https://img.icons8.com/ios-filled/50/ffffff/error.png')] bg-cover opacity-30 animate-float-error bottom-20 right-16 rotate-12" />
             <div className="absolute w-6 h-6 bg-[url('https://img.icons8.com/ios-filled/50/ffffff/warning.png')] bg-cover opacity-30 animate-float-error top-20 right-20" />

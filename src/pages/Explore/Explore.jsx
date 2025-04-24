@@ -4,6 +4,7 @@ import { Book, Star } from 'lucide-react';
 import Swal from 'sweetalert2';
 import confetti from 'canvas-confetti';
 import { useLoaderData } from 'react-router';
+import { Helmet } from 'react-helmet-async';
 // import booksData from '../../data/books.json'; // Adjust path as needed
 
 const Explore = () => {
@@ -152,6 +153,9 @@ const Explore = () => {
       ref={sectionRef}
       className="relative rounded-lg bg-gradient-to-br from-indigo-800 to-purple-600 min-h-screen py-20 overflow-hidden"
     >
+      <Helmet>
+        <title>Book_Vibe | Explore</title>
+      </Helmet>
       {/* Floating Stars and Moons */}
       {stars.map((star) => (
         <div

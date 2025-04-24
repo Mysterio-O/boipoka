@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router';
 
 const animatedTexts = [
@@ -41,6 +42,9 @@ const About = () => {
     return (
         <section className="relative mb-10 rounded-lg overflow-hidden py-28 px-4 bg-[linear-gradient(135deg,#1e1b4b_0%,#312e81_50%,#4c1d95_100%)] text-center min-h-screen flex items-center justify-center animate-slide-in-top">
             {/* 🌌 Starfield Background */}
+            <Helmet>
+                <title>Book_Vibe | About</title>
+            </Helmet>
             <div className="absolute inset-0 overflow-hidden">
                 {[...Array(50)].map((_, i) => (
                     <div

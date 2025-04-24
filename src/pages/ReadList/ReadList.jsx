@@ -5,6 +5,7 @@ import 'react-tabs/style/react-tabs.css';
 import { getStoredBook, getWishedBooks } from '../../utilities/utility';
 import Book from '../Book/Book';
 import WishList from '../WishList/WishList';
+import { Helmet } from 'react-helmet-async';
 // import { getStoredBook } from '../../utilities/utility';
 
 const ReadList = () => {
@@ -19,17 +20,20 @@ const ReadList = () => {
         const myList = allBookData.filter((book) => storedBookData.includes(book.bookId))
         console.log(myList);
         setReadList(myList)
-    }, []);
+    }, [allBookData]);
     useEffect(() => {
         const wishedBooksFromStorage = getWishedBooks();
         console.log(wishedBooksFromStorage)
         const myWishList = allBookData.filter((book) => wishedBooksFromStorage.includes(book.bookId));
         setWishList(myWishList);
-    }, [])
+    }, [allBookData])
 
     return (
         <div className='mb-10 px-2 md:px-0 bg-[linear-gradient(135deg,#1e1b4b_0%,#312e81_50%,#4c1d95_100%)] rounded-2xl'>
             {/* 🌌 Starfield Background */}
+            <Helmet>
+                <title>Book_Vibe | Read_List</title>
+            </Helmet>
             <div className="absolute inset-0 overflow-hidden">
                 {[...Array(50)].map((_, i) => (
                     <div
